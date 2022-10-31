@@ -41,7 +41,7 @@ export default props => {
         //     ]
         // )
         let index = corrida.findIndex(e => e.id_piloto === vol[0][0].id_piloto && e.n_volta === vol[0][0].n_volta);
-        corrida[index] = { ...corrida[index], key: value }
+        // corrida[index] = { ...corrida[index], key: value }
     }
     let index = corrida.findIndex(e => e.id_piloto === vol[0][0].id_piloto && e.n_volta === vol[0][0].n_volta);
         // const data = [...initialState];
@@ -50,13 +50,13 @@ export default props => {
         // data[index] = e;
         // setState({initialState: data});
         //corrida.splice(index, 1, {nome: 'Rafael'})
-        console.warn(corrida)
+        // console.warn(corrida)
 
     return(
         <View style={styles.form}>
             <Text style={styles.title}>Hora</Text>
             <TextInput
-                onChangeText={h => setH(h)}
+                onChangeText={h => setHora(h)}
                 placeholder="Hora da corrida. Ex.: 05:02:50.857"
                 placeholderTextColor='#ddd'
                 value={hora}
@@ -112,5 +112,5 @@ export default props => {
 const styles = StyleSheet.create({
     form: { padding: 12 },
     input: { height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10 },
-    title: { fontSize: 16, fontWeight: 'bold' }
+    title: { fontSize: 20, fontWeight: 'bold' }
 })

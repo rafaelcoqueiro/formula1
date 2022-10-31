@@ -11,6 +11,8 @@ import UserList from "./views/UserList";
 import { Button, Icon } from "@rneui/themed";
 import UserEdit from './views/UserEdit';
 import { PilotosProvider } from "./context/PilotosContext";
+import Principal from "./views/Principal";
+import Chegada from './views/Chegada'
 
 
 const Stack = createNativeStackNavigator();
